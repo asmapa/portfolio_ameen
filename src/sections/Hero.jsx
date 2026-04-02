@@ -46,15 +46,32 @@ export const Hero = () => {
 
              {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 mt-4">
-              <a href="https://mail.google.com/mail/?view=cm&to=ameenmohemmedbashir@gmail.com" ><Button size="lg" >
-                Contact Me 
-              </Button></a>
-              
-             <a href="/ameen_cv.pdf" download>
-  <AnimatedBorderButton>
+              <div className="flex flex-nowrap gap-3 mt-4">
+
+  {/* Contact */}
+  <a
+    href="https://mail.google.com/mail/?view=cm&to=ameenmohemmedbashir@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-5 py-2.5 text-sm sm:text-base rounded-full border border-white/20 bg-white/5 text-white 
+    hover:border-primary hover:bg-primary/10 hover:text-primary 
+    transition-all duration-300"
+  >
+    Contact Me
+  </a>
+
+  {/* Download */}
+  <a
+    href="/ameen_cv.pdf"
+    download
+    className="px-5 py-2.5 text-sm sm:text-base rounded-full border border-white/20 hover:bg-white/5 hover:text-white 
+    hover:border-primary bg-primary/10 text-primary 
+    transition-all duration-300"
+  >
     Download CV
-  </AnimatedBorderButton>
-</a>
+  </a>
+
+</div>
             </div>
 
           
