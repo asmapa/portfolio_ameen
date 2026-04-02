@@ -29,9 +29,9 @@ const highlights = [
 
 export const About = () => {
   return (
-    <section id="about" className="top-0 relative overflow-hidden">
+    <section id="about" className=" relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-25 items-center">
+        <div className="grid lg:grid-cols-2 gap-25 items-center ">
 
 
 
@@ -43,7 +43,7 @@ export const About = () => {
 >
 
    {/* Left Column */}
-          <div className="space-y-10">
+          <div className="space-y-10 py-20">
             <div className="animate-fade-in">
               <span className="text-secondary-foreground text-2xl font-medium tracking-wider uppercase">
                 About Me
@@ -93,7 +93,7 @@ export const About = () => {
 >
 
      {/* Right Column - Hilights */}
-          <div className="grid sm:grid-cols-2 gap-10 ">
+          <div className="grid sm:grid-cols-2 gap-10 animate-float-strong">
             {highlights.map((item, idx) => (
               <div
                 key={idx}

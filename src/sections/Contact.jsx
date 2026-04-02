@@ -22,7 +22,7 @@ export const Contact = () => {
 
           {/* Email */}
           <a
-            href="mailto:ameenmohammedbashir@protonmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=ameenmohemmedbashir@gmail.com"
             className="flex items-center gap-3 px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
           >
             <FaEnvelope className="text-primary" />

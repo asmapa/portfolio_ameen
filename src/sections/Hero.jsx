@@ -23,8 +23,8 @@ export const Hero = () => {
       <div className="container mx-auto px-6 pt-42  relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div>
-            <div >
+          <div >
+            <div className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary animate-fade-in animation-delay-200">
                 <span className="w-2 h-2 bg-primary rounded-full " />
                 Embedded Firmware Engineer • Automotive Systems Specialist
@@ -32,8 +32,8 @@ export const Hero = () => {
             </div>
 
              {/* Headline */}
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-3xl animate-fade-in animation-delay-200">
+            <div className="space-y-10">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-3xl animate-fade-in animation-delay-200">
   Engineering <span className="whitespace-nowrap">
     intelligent <span className="text-primary glow-text">embedded</span>
   </span> systems with
@@ -46,13 +46,15 @@ export const Hero = () => {
 
              {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 mt-4">
-              <Button size="lg">
+              <a href="https://mail.google.com/mail/?view=cm&to=ameenmohemmedbashir@gmail.com" ><Button size="lg" >
                 Contact Me 
-              </Button>
-              <AnimatedBorderButton>
-                
-                Download CV
-              </AnimatedBorderButton>
+              </Button></a>
+              
+             <a href="/ameen_cv.pdf" download>
+  <AnimatedBorderButton>
+    Download CV
+  </AnimatedBorderButton>
+</a>
             </div>
 
           
@@ -98,7 +100,7 @@ export const Hero = () => {
   <img 
     src={ameen}
     alt="profile"
-    className="relative animate-fade-in animation-delay-200 z-10 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[750px] object-contain  drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] -translate-y-20"
+    className="relative animate-fade-in animation-delay-200 z-10 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[750px] object-contain  drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] -translate-y-20 animate-float-strong"
   />
 
   <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-background to-transparent z-20"></div>

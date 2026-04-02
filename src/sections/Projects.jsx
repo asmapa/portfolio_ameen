@@ -30,11 +30,11 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-20">
+    <section id="projects" className="relative  overflow-hidden py-20">
       <div className="container mx-auto px-6 relative z-10">
 
         <motion.div
-  initial={{ opacity: 0, y: 50 }}
+         initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
@@ -45,33 +45,37 @@ export const Projects = () => {
         </h2>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((proj, idx) => (
-            <div
-              key={idx}
-              className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-lg hover:scale-105 transition"
-            >
-              <h3 className="text-xl font-semibold text-white mb-3">
-                {proj.title}
-              </h3>
+        <div className="grid md:grid-cols-2 gap-8 animate-float-strong">
+  {projects.map((proj, idx) => (
+    <motion.div
+      key={idx}
+      initial={{ opacity: 0, x: idx % 2 === 0 ? -100 : 100, scale: 0.9 }}
+      whileInView={{ opacity: 1, x: 0, scale: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-lg hover:scale-105 transition"
+    >
+      <h3 className="text-xl font-semibold text-white mb-3">
+        {proj.title}
+      </h3>
 
-              <p className="text-sm text-muted-foreground mb-4">
-                {proj.description}
-              </p>
+      <p className="text-sm text-muted-foreground mb-4">
+        {proj.description}
+      </p>
 
-              <div className="flex flex-wrap gap-2">
-                {proj.tech.map((t, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="flex flex-wrap gap-2 ">
+        {proj.tech.map((t, i) => (
+          <span
+            key={i}
+            className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full"
+          >
+            {t}
+          </span>
+        ))}
+      </div>
+    </motion.div>
+  ))}
+</div>
 
   {/* your content */}
 </motion.div>

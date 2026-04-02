@@ -5,7 +5,7 @@ export const Button = ({
   ...props
 }) => {
   const baseClasses =
-    "relative overflow-hidden rounded-full font-medium focus:outline-none  focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-white";
+    "relative overflow-hidden rounded-full font-medium focus:outline-none  focus-visible:ring-primary bg-primary text-primary-foreground ";
 
   const sizeClasses = {
     sm: "px-4 py-2 text-sm",

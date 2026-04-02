@@ -23,6 +23,19 @@
   --color-surface: #1a2329;
 }
 
+@keyframes floatStrong {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.animate-float-strong {
+  animation: floatStrong 2.5s ease-in-out infinite;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

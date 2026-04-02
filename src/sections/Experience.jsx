@@ -29,7 +29,7 @@ export const Experience = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-16 transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105">
           <span
             className="text-secondary-foreground text-sm
            font-medium tracking-wider uppercase animate-fade-in"
@@ -66,11 +66,11 @@ export const Experience = () => {
             {experiences.map((exp, idx) => (
               <div
                 key={idx}
-                className="relative grid md:grid-cols-2 gap-8 animate-fade-in"
+                className="relative grid md:grid-cols-2 gap-8 animate-fade-in "
                 style={{ animationDelay: `${(idx + 1) * 150}ms` }}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10">
+                <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background shadow-[0_0_20px_rgba(32,178,166,0.5)] z-10">
                   {exp.current && (
                     <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
                   )}
