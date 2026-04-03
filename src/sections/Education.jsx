@@ -23,7 +23,7 @@ export const Education = (() => {
 </p>
 
 
-<div className="grid md:grid-cols-2 gap-8 py-10">
+<div className="grid md:grid-cols-2 gap-8 py-10 animate-float-strong">
 
   {/* BTech */}
   <motion.div

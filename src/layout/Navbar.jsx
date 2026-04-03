@@ -38,9 +38,13 @@ export const Navbar = () =>{
           </div>
         </div>
 
-            <div className="hidden  md:block">
-                <h1 className="text-2xl">Portfolio</h1>
-            </div>
+            <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+    <img 
+      src="/ameenlogo.png" 
+      alt="logo" 
+      className="w-20 h-20 object-contain"
+    />
+  </div>
 
             {/*Mobile screen button */}
 
